@@ -3,7 +3,7 @@ puts"何回計算を繰り返しますか？"
 
 times=gets.to_i
 
-for i in 1 ..times
+for i in 1 ..times do
   puts "#{i}"+"回目の計算" 
   puts"2つの値を入力してください"
 
