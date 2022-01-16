@@ -186,5 +186,47 @@
 # puts input
 
 # =========================
-line = readlines
-puts line
+# line = readlines
+# puts line
+
+# =========================
+# input_line = gets.to_i
+# input_line.times do
+#   s = gets.chomp.split(" ")
+#   print "hello = #{ s[0] } , world = #{ s[1] }\n"
+# end
+
+# =========================
+# input_line = readlines
+# puts input_line
+
+# =========================
+# n = "Hello paiza".split(' ')
+# puts n
+# n = "He likes paiza".split(' ')
+# puts n
+
+# ==========================
+# line = readlines
+# puts line
+
+
+# ===========================
+# n = gets.split(' ')
+# puts n
+
+# n = gets.split(' ')
+# l = n[0].to_i
+# puts n[1..l]
+
+
+# a = gets.split(' ').map(&:to_f)
+# l = a.shift.to_i
+
+# a.each { |val| puts val }
+
+
+a = gets.split(' ').map(&:to_f)
+n = a.shift.to_i
+
+a.each { |val| puts val }
