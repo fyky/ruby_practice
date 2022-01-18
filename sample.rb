@@ -226,7 +226,30 @@
 # a.each { |val| puts val }
 
 
-a = gets.split(' ').map(&:to_f)
-n = a.shift.to_i
+# a = gets.split(' ').map(&:to_f)
+# n = a.shift.to_i
 
-a.each { |val| puts val }
+# a.each { |val| puts val }
+
+
+# ============================
+# N = readlines.first.to_i
+line = readlines.map(&:chomp)
+N = line.first.to_i
+# p N
+days = line.drop(1)
+# p days
+
+
+for i in 0..N-1 do
+  if i == N-1
+    next
+  end
+  if days[i+1].to_i == days[i].to_i
+    puts "stay"
+  elsif days[i+1].to_i > days[i].to_i
+    puts "up" + " #{days[i+1].to_i-days[i].to_i}"
+  elsif days[i+1].to_i < days[i].to_i
+    puts "down" + " #{days[i].to_i-days[i+1].to_i}"
+  end
+end
