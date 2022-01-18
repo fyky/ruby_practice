@@ -234,22 +234,30 @@
 
 # ============================
 # N = readlines.first.to_i
-line = readlines.map(&:chomp)
-N = line.first.to_i
-# p N
-days = line.drop(1)
-# p days
+# line = readlines.map(&:chomp)
+# N = line.first.to_i
+# # p N
+# days = line.drop(1)
+# # p days
 
 
-for i in 0..N-1 do
-  if i == N-1
-    next
-  end
-  if days[i+1].to_i == days[i].to_i
-    puts "stay"
-  elsif days[i+1].to_i > days[i].to_i
-    puts "up" + " #{days[i+1].to_i-days[i].to_i}"
-  elsif days[i+1].to_i < days[i].to_i
-    puts "down" + " #{days[i].to_i-days[i+1].to_i}"
-  end
-end
+# for i in 0..N-1 do
+#   if i == N-1
+#     next
+#   end
+#   if days[i+1].to_i == days[i].to_i
+#     puts "stay"
+#   elsif days[i+1].to_i > days[i].to_i
+#     puts "up" + " #{days[i+1].to_i-days[i].to_i}"
+#   elsif days[i+1].to_i < days[i].to_i
+#     puts "down" + " #{days[i].to_i-days[i+1].to_i}"
+#   end
+# end
+
+# ==============================
+N = gets.split(' ').map(&:to_i).sort.reverse
+p N[2]
+
+# sort = N.sort
+# sorts = Array.new(N)
+# p sorts
