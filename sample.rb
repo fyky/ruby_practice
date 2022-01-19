@@ -255,9 +255,125 @@
 # end
 
 # ==============================
-N = gets.split(' ').map(&:to_i).sort.reverse
-p N[2]
+# N = gets.split(' ').map(&:to_i).sort.reverse
+# p N[2]
 
 # sort = N.sort
 # sorts = Array.new(N)
 # p sorts
+
+# ===============================
+
+# O = readlines.map(&:to_i)
+# N = O[0]
+# number = O.drop(1).sort
+# p number
+
+
+#   # if number.uniq.count == N
+#   #   p "Correct"
+#   # else
+#   #   p "違う"
+#   # end
+
+#   number.each do |t|
+
+#   end
+
+#   for i in 1..N do
+#   if number[i-1] == i
+#     puts "OK"
+#   else
+#     p number.uniq
+#     # puts "#{i}"+ " #{number[i-1]}"
+#   end
+# end
+# min = O.sort
+# p min
+
+# ==================================
+# O = readlines.map(&:to_i)
+# N = O[0]
+# number = O.drop(1).sort
+# # sorts = number.each
+# # p sorts.count(1)
+
+# for i in 1..N
+#   if number.count(i) == 1
+#     p "一緒"
+#   else
+#     p "違う"
+#   end
+# end
+
+# ==================================
+# O = readlines.map(&:to_i)
+# # N = 個数
+# N = O.shift
+# # A = 1~Nの数字、小さい順から並び替え
+# A = O.drop(0).sort
+# p A
+
+# for i in 1..N do
+#   if A.count(i) == 1
+#     next
+#     # p "OK"+"#{i}"
+#   # if A.all?{|t| t == i}
+#   #   p "a"
+#   elsif A.count(i) == 2
+#     G = "多い"+"#{i}"
+#   elsif A.count(i) == 0
+#     T = "足りない"+"#{i}"
+
+#   end
+#   p G
+
+
+
+# end
+
+
+# ====================================
+# O = readlines.map(&:chomp)
+# s = O.drop(1)
+# p s[7]
+
+# ===================================
+# puts [*1..10]
+# (1..99).each{|n| print "#{n} "}
+# print 100
+
+
+# for i in 1..10 do
+#   puts i
+# end
+
+# ===================================
+# N = gets.to_i
+# puts N*12
+
+# ====================
+# N = gets.to_i
+# if N % 2 == 0
+#   puts "even"
+# else
+#   puts "odd"
+# end
+
+# ==================
+# N = gets.chomp
+# p N.length
+
+
+# ===================
+# N = gets.split(" ")
+
+# if N[0] == N[1]
+#   puts "eq"
+# elsif N[0] > N[1]
+#   puts N[0]
+# elsif N[1] > N[0]
+#   puts N[1]
+# end
+
+# ====================
